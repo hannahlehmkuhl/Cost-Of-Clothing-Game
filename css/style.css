@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen");
+
+
+body {
+    font-family: "Silkscreen";
+
+    margin: 0;
+    padding: 0;
+    background-color:rgb(44, 57, 57);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+      
+}
+.typewriter p {
+    color: rgb(0, 0, 0);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(72, 77, 81); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent}
+    50% { border-color: rgb(31, 170, 163) }
+  }
+.container {
+    text-align: center;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+   position: absolute;
+   top: 8%;
+   right: 12%;
+}
+
+.btn {
+   position: absolute;
+   top: 100%;
+   right: 0%;
+
+    background-color: rgb(67, 105, 103);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: rgb(27, 46, 48);
+}
+img {
+    width: 700px;
+    height:500px;
+    border-radius: 12pt;
+
+}
+
+canvas {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12pt;
+}
+
+.p5-canvas {
+    margin-bottom: 10px;
+}
+
